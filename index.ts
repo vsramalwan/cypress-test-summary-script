@@ -1,7 +1,9 @@
 import {markdownTable} from 'markdown-table'
+import result from "./result.json";
 
-console.log(markdownTable([
-    ['Branch', 'Commit'],
-    ['main', '0123456789abcdef'],
-    ['staging', 'fedcba9876543210']
-]))
+result?.results[0]?.suites[0]?.suites[0]?.tests?.forEach(test => {
+    console.log(markdownTable([
+        ['Duration', 'Total Tests'],
+        [test?.title, test?.duration?.toString()]
+    ]))
+});
