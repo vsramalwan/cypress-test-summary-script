@@ -7,5 +7,5 @@ Sample output:
 
 | Duration | Total Tests | State |
 | -------- | ----------- | ----- |
-| Z | 6665 | failed |
+| Y | 6665 | passed |
 | Z | 6665 | failed |
